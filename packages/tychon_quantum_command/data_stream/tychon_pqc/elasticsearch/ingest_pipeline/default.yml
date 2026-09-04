@@ -941,6 +941,30 @@ processors:
             value: "Processor {{{_ingest.on_failure_processor_type}}} with tag {{{_ingest.on_failure_processor_tag}}} failed with message: {{{_ingest.on_failure_message}}}"
 
   - script:
+      tag: lift_remaining_tqc_vendor_roots
+      lang: painless
+      description: Move remaining non-ECS TQC roots into the shared Tychon vendor namespace after normalization.
+      source: |-
+        if (ctx.tychon == null || !(ctx.tychon instanceof Map)) {
+          ctx.tychon = [:];
+        }
+        for (String root : ['asset_type', 'certificate', 'config', 'crypto', 'error', 'ipsec_tunnel', 'kerberos', 'keystore', 'migration_priority', 'omb', 'pipeline', 'port', 'pqc', 'pqc_readiness', 'quantum_readiness', 'quantum_risk', 'routing', 'scan_mode', 'scanner_version', 'security', 'ssh', 'target_host', 'tls', 'tunnel_details', 'type', 'vulnerability', 'vpn_client', 'vpn_config']) {
+          if (ctx[root] == null) {
+            continue;
+          }
+          if (ctx.tychon[root] == null) {
+            ctx.tychon[root] = ctx[root];
+          } else if (ctx.tychon[root] instanceof Map && ctx[root] instanceof Map) {
+            for (entry in ctx[root].entrySet()) {
+              if (ctx.tychon[root][entry.getKey()] == null) {
+                ctx.tychon[root][entry.getKey()] = entry.getValue();
+              }
+            }
+          }
+          ctx.remove(root);
+        }
+
+  - script:
       tag: script_drop_null_empty_values
       lang: painless
       description: Remove null, empty string, empty object, and empty array values from the final event.

@@ -28,17 +28,6 @@
             "host": {
                 "domain": "rnd-lab"
             },
-            "kerberos": {
-                "config_source": "os_default",
-                "has_aes128": true,
-                "has_aes256": true,
-                "has_des": false,
-                "has_rc4": true,
-                "is_explicitly_configured": false,
-                "is_quantum_safe": false,
-                "raw_bitmask": 28,
-                "supported_types": "RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96"
-            },
             "observer": {
                 "domain": "rnd-lab",
                 "hostname": "71-win1124h2",
@@ -57,6 +46,17 @@
             ],
             "tychon": {
                 "index": "archives",
+                "kerberos": {
+                    "config_source": "os_default",
+                    "has_aes128": true,
+                    "has_aes256": true,
+                    "has_des": false,
+                    "has_rc4": true,
+                    "is_explicitly_configured": false,
+                    "is_quantum_safe": false,
+                    "raw_bitmask": 28,
+                    "supported_types": "RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96"
+                },
                 "observer": {
                     "bigfix_client_installed": false,
                     "bios_serial_number": "VMware, Inc. VMware20,1",

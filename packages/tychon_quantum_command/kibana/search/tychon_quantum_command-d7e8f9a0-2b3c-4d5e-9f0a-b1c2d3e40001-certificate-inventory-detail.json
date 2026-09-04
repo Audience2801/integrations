@@ -4,15 +4,15 @@
             "observer.hostname",
             "tychon.type",
             "x509.subject.common_name",
-            "certificate.issuer_common_name",
+            "tychon.certificate.issuer_common_name",
             "x509.issuer.common_name",
-            "omb.sig_tier",
+            "tychon.omb.sig_tier",
             "tychon.crypto.grade",
             "cert_days_remaining",
             "cert_total_days",
-            "certificate.not_after",
+            "tychon.certificate.not_after",
             "x509.not_after",
-            "certificate.is_self_signed",
+            "tychon.certificate.is_self_signed",
             "file.path",
             "server.ip",
             "server.port"
@@ -43,21 +43,21 @@
                         "observer.hostname",
                         "tychon.type",
                         "x509.subject.common_name",
-                        "certificate.issuer_common_name",
+                        "tychon.certificate.issuer_common_name",
                         "x509.issuer.common_name",
-                        "omb.sig_tier",
+                        "tychon.omb.sig_tier",
                         "tychon.crypto.grade",
                         "cert_days_remaining",
                         "cert_total_days",
-                        "certificate.not_after",
+                        "tychon.certificate.not_after",
                         "x509.not_after",
-                        "certificate.is_self_signed",
+                        "tychon.certificate.is_self_signed",
                         "file.path",
                         "server.ip",
                         "server.port"
                     ],
                     "kibanaSavedObjectMeta": {
-                        "searchSourceJSON": "{\"highlightAll\": true, \"version\": true, \"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": [], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                        "searchSourceJSON": "{\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"kuery\",\"query\":\"\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
                     },
                     "sort": [
                         [

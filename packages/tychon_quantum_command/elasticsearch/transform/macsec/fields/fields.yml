@@ -200,7 +200,7 @@
     type: keyword
   - name: type
     type: keyword
-- name: kerberos
+- name: tychon.kerberos
   type: group
   fields:
   - name: config_source
@@ -255,7 +255,7 @@
   type: keyword
 - name: log.offset
   type: double
-- name: target_host.ip
+- name: tychon.target_host.ip
   type: ip
-- name: target_host.ipv4
+- name: tychon.target_host.ipv4
   type: ip

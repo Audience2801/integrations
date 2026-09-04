@@ -668,7 +668,7 @@
       type: keyword
     - name: windows_cng_version
       type: keyword
-- name: certificate
+- name: tychon.certificate
   type: group
   fields:
   - name: alias
@@ -846,7 +846,7 @@
     fields:
     - name: duration_days
       type: keyword
-- name: config
+- name: tychon.config
   type: group
   fields:
   - name: config_file
@@ -857,7 +857,7 @@
     type: keyword
   - name: resolved_path
     type: keyword
-- name: crypto
+- name: tychon.crypto
   type: group
   fields:
   - name: key_algorithm
@@ -866,7 +866,7 @@
     type: long
   - name: signature_algorithm
     type: keyword
-- name: ipsec_tunnel
+- name: tychon.ipsec_tunnel
   type: group
   fields:
   - name: active
@@ -891,7 +891,7 @@
     type: keyword
   - name: version
     type: keyword
-- name: kerberos
+- name: tychon.kerberos
   type: group
   fields:
   - name: config_source
@@ -912,7 +912,7 @@
     type: long
   - name: supported_types
     type: keyword
-- name: keystore
+- name: tychon.keystore
   type: group
   fields:
   - name: accessible
@@ -965,7 +965,7 @@
         type: long
       - name: RSA
         type: long
-- name: omb
+- name: tychon.omb
   type: group
   fields:
   - name: additional_notes
@@ -1036,7 +1036,7 @@
     type: keyword
   - name: vulnerability_status
     type: keyword
-- name: port
+- name: tychon.port
   type: group
   fields:
   - name: number
@@ -1045,7 +1045,7 @@
     type: keyword
   - name: status_overall
     type: keyword
-- name: pqc
+- name: tychon.pqc
   type: group
   fields:
   - name: is_pqc_ready
@@ -1068,7 +1068,7 @@
     type: keyword
   - name: vulnerable
     type: boolean
-- name: quantum_readiness
+- name: tychon.quantum_readiness
   type: group
   fields:
   - name: assessment_duration_ms
@@ -1311,7 +1311,7 @@
       type: long
     - name: priority
       type: keyword
-- name: security
+- name: tychon.security
   type: group
   fields:
   - name: known_vulnerabilities
@@ -1334,7 +1334,7 @@
     type: boolean
   - name: weak_dh_group
     type: boolean
-- name: ssh
+- name: tychon.ssh
   type: group
   fields:
   - name: banner
@@ -1430,7 +1430,7 @@
       type: keyword
     - name: mac_algorithms
       type: keyword
-- name: target_host
+- name: tychon.target_host
   type: group
   fields:
   - name: address
@@ -1441,7 +1441,7 @@
     type: ip
   - name: ipv4
     type: ip
-- name: tls
+- name: tychon.tls
   type: group
   fields:
   - name: duration_ms
@@ -1513,7 +1513,7 @@
       fields:
       - name: sha1
         type: keyword
-- name: tunnel_details
+- name: tychon.tunnel_details
   type: group
   fields:
   - name: auth_method
@@ -1532,7 +1532,7 @@
     type: boolean
   - name: protocol
     type: keyword
-- name: vpn_client
+- name: tychon.vpn_client
   type: group
   fields:
   - name: active
@@ -1561,7 +1561,7 @@
     type: keyword
   - name: version
     type: keyword
-- name: vpn_config
+- name: tychon.vpn_config
   type: group
   fields:
   - name: auto_reconnect
@@ -1578,7 +1578,7 @@
     type: boolean
   - name: split_tunneling
     type: boolean
-- name: vulnerability
+- name: tychon.vulnerability
   type: group
   fields:
   - name: assessed_at
@@ -1681,7 +1681,7 @@
       type: keyword
   - name: type
     type: keyword
-- name: error.pipeline
+- name: tychon.error.pipeline
   type: keyword
 - name: file.permissions
   type: keyword

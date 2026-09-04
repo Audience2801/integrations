@@ -19,17 +19,6 @@
             "host": {
                 "domain": "rnd-lab"
             },
-            "kerberos": {
-                "config_source": "os_default",
-                "has_aes128": true,
-                "has_aes256": true,
-                "has_des": false,
-                "has_rc4": true,
-                "is_explicitly_configured": false,
-                "is_quantum_safe": false,
-                "raw_bitmask": 28,
-                "supported_types": "RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96"
-            },
             "observer": {
                 "domain": "rnd-lab",
                 "hostname": "71-win1124h2",
@@ -43,20 +32,22 @@
                     "version": "10.0.26100.8655"
                 }
             },
-            "security": {
-                "pqc_support": false,
-                "pqc_vulnerable": true,
-                "risk_level": "medium",
-                "score": 60,
-                "security_score": 60,
-                "vulnerable": true,
-                "weak_crypto": false
-            },
             "tags": [
                 "preserve_original_event"
             ],
             "tychon": {
                 "index": "vpn-clients",
+                "kerberos": {
+                    "config_source": "os_default",
+                    "has_aes128": true,
+                    "has_aes256": true,
+                    "has_des": false,
+                    "has_rc4": true,
+                    "is_explicitly_configured": false,
+                    "is_quantum_safe": false,
+                    "raw_bitmask": 28,
+                    "supported_types": "RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96"
+                },
                 "observer": {
                     "bigfix_client_installed": false,
                     "bios_serial_number": "VMware, Inc. VMware20,1",
@@ -108,31 +99,40 @@
                     "timestamp": "2026-07-06T17:03:00.055778Z",
                     "type": "local"
                 },
-                "type": "vpn_client"
-            },
-            "vpn_client": {
-                "active": true,
-                "config_path": "C:\\ProgramData\\Tychon\\vpn.conf",
-                "detection_confidence": "high",
-                "detection_method": "service_scan",
-                "executable_path": "C:\\Program Files\\Fortinet\\FortiClient\\FortiClient.exe",
-                "first_detected": "2026-07-06T17:03:00.055778Z",
-                "install_path": "C:\\Program Files\\Fortinet\\FortiClient",
-                "last_seen": "2026-07-06T17:03:00.055778Z",
-                "name": "FortiClient",
-                "service_name": "FA_Scheduler",
-                "status": "active",
-                "vendor": "Fortinet",
-                "version": "7.4.0"
-            },
-            "vpn_config": {
-                "auto_reconnect": true,
-                "config_encrypted": true,
-                "dns_leak_protection": true,
-                "ipv6_leak_protection": true,
-                "kill_switch": false,
-                "logging_enabled": true,
-                "split_tunneling": false
+                "security": {
+                    "pqc_support": false,
+                    "pqc_vulnerable": true,
+                    "risk_level": "medium",
+                    "score": 60,
+                    "security_score": 60,
+                    "vulnerable": true,
+                    "weak_crypto": false
+                },
+                "type": "vpn_client",
+                "vpn_client": {
+                    "active": true,
+                    "config_path": "C:\\ProgramData\\Tychon\\vpn.conf",
+                    "detection_confidence": "high",
+                    "detection_method": "service_scan",
+                    "executable_path": "C:\\Program Files\\Fortinet\\FortiClient\\FortiClient.exe",
+                    "first_detected": "2026-07-06T17:03:00.055778Z",
+                    "install_path": "C:\\Program Files\\Fortinet\\FortiClient",
+                    "last_seen": "2026-07-06T17:03:00.055778Z",
+                    "name": "FortiClient",
+                    "service_name": "FA_Scheduler",
+                    "status": "active",
+                    "vendor": "Fortinet",
+                    "version": "7.4.0"
+                },
+                "vpn_config": {
+                    "auto_reconnect": true,
+                    "config_encrypted": true,
+                    "dns_leak_protection": true,
+                    "ipv6_leak_protection": true,
+                    "kill_switch": false,
+                    "logging_enabled": true,
+                    "split_tunneling": false
+                }
             }
         }
     ]

@@ -1,4 +1,4 @@
-- name: omb
+- name: tychon.omb
   type: group
   fields:
   - name: additional_notes
@@ -51,7 +51,7 @@
   type: boolean
 - name: quantum_ready_kx
   type: boolean
-- name: target_host
+- name: tychon.target_host
   type: group
   fields:
   - name: address
@@ -277,7 +277,7 @@
     type: keyword
   - name: type
     type: keyword
-- name: kerberos
+- name: tychon.kerberos
   type: group
   fields:
   - name: config_source
@@ -308,11 +308,11 @@
   type: keyword
 - name: observer.software_version
   type: keyword
-- name: port.number
+- name: tychon.port.number
   type: long
-- name: port.protocol_detected
+- name: tychon.port.protocol_detected
   type: keyword
-- name: port.status_overall
+- name: tychon.port.status_overall
   type: keyword
 - name: process.executable_directory
   type: keyword

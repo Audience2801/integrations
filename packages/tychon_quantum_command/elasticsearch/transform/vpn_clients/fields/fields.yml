@@ -1,4 +1,4 @@
-- name: security
+- name: tychon.security
   type: group
   fields:
   - name: pqc_support
@@ -15,7 +15,7 @@
     type: boolean
   - name: weak_crypto
     type: boolean
-- name: vpn_client
+- name: tychon.vpn_client
   type: group
   fields:
   - name: active
@@ -44,7 +44,7 @@
     type: keyword
   - name: version
     type: keyword
-- name: vpn_config
+- name: tychon.vpn_config
   type: group
   fields:
   - name: auto_reconnect
@@ -238,7 +238,7 @@
     type: keyword
   - name: type
     type: keyword
-- name: kerberos
+- name: tychon.kerberos
   type: group
   fields:
   - name: config_source
@@ -293,7 +293,7 @@
   type: keyword
 - name: log.offset
   type: double
-- name: target_host.ip
+- name: tychon.target_host.ip
   type: ip
-- name: target_host.ipv4
+- name: tychon.target_host.ipv4
   type: ip

@@ -20,17 +20,6 @@
                 "hostname": "71-win1124h2",
                 "id": "41c3d03f-3e7f-45b0-a65e-199cda6f50e5"
             },
-            "kerberos": {
-                "config_source": "os_default",
-                "has_aes128": true,
-                "has_aes256": true,
-                "has_des": false,
-                "has_rc4": true,
-                "is_explicitly_configured": false,
-                "is_quantum_safe": false,
-                "raw_bitmask": 28,
-                "supported_types": "RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96"
-            },
             "observer": {
                 "domain": "rnd-lab",
                 "hostname": "71-win1124h2",
@@ -65,6 +54,17 @@
                     "source": "process"
                 },
                 "index": "applications",
+                "kerberos": {
+                    "config_source": "os_default",
+                    "has_aes128": true,
+                    "has_aes256": true,
+                    "has_des": false,
+                    "has_rc4": true,
+                    "is_explicitly_configured": false,
+                    "is_quantum_safe": false,
+                    "raw_bitmask": 28,
+                    "supported_types": "RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96"
+                },
                 "library": {
                     "crypt32_pqc_status": "not_capable",
                     "crypt32_version": "10.0.26100.8521",

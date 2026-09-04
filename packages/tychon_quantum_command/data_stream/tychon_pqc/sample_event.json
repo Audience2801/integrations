@@ -63,7 +63,7 @@
     "input": {
         "type": "filestream"
     },
-    "kerberos": {
+    "tychon.kerberos": {
         "config_source": "os_default",
         "has_aes128": true,
         "has_aes256": true,

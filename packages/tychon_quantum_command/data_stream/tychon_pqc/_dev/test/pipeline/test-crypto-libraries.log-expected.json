@@ -19,17 +19,6 @@
             "host": {
                 "domain": "rnd-lab"
             },
-            "kerberos": {
-                "config_source": "os_default",
-                "has_aes128": true,
-                "has_aes256": true,
-                "has_des": false,
-                "has_rc4": true,
-                "is_explicitly_configured": false,
-                "is_quantum_safe": false,
-                "raw_bitmask": 28,
-                "supported_types": "RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96"
-            },
             "observer": {
                 "domain": "rnd-lab",
                 "hostname": "71-win1124h2",
@@ -53,6 +42,17 @@
             ],
             "tychon": {
                 "index": "crypto-libraries",
+                "kerberos": {
+                    "config_source": "os_default",
+                    "has_aes128": true,
+                    "has_aes256": true,
+                    "has_des": false,
+                    "has_rc4": true,
+                    "is_explicitly_configured": false,
+                    "is_quantum_safe": false,
+                    "raw_bitmask": 28,
+                    "supported_types": "RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96"
+                },
                 "library": {
                     "crypto_type": "windows_cng",
                     "name": "bcrypt.dll",
@@ -114,13 +114,13 @@
                     "timestamp": "2026-07-06T17:03:00.055778Z",
                     "type": "local"
                 },
-                "type": "crypto_library"
-            },
-            "vulnerability": {
-                "assessed_at": "2026-07-06T17:03:00.055778Z",
-                "is_vulnerable": true,
-                "risk_level": "medium",
-                "risk_reason": "No native PQC support detected"
+                "type": "crypto_library",
+                "vulnerability": {
+                    "assessed_at": "2026-07-06T17:03:00.055778Z",
+                    "is_vulnerable": true,
+                    "risk_level": "medium",
+                    "risk_reason": "No native PQC support detected"
+                }
             }
         }
     ]

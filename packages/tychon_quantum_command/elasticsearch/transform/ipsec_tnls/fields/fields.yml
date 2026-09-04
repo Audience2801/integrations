@@ -1,4 +1,4 @@
-- name: ipsec_tunnel
+- name: tychon.ipsec_tunnel
   type: group
   fields:
   - name: active
@@ -23,7 +23,7 @@
     type: keyword
   - name: version
     type: keyword
-- name: pqc
+- name: tychon.pqc
   type: group
   fields:
   - name: is_pqc_ready
@@ -32,7 +32,7 @@
     type: keyword
   - name: quantum_resistance
     type: keyword
-- name: security
+- name: tychon.security
   type: group
   fields:
   - name: known_vulnerabilities
@@ -55,7 +55,7 @@
     type: boolean
   - name: weak_dh_group
     type: boolean
-- name: tunnel_details
+- name: tychon.tunnel_details
   type: group
   fields:
   - name: auth_method
@@ -251,7 +251,7 @@
     type: keyword
   - name: type
     type: keyword
-- name: kerberos
+- name: tychon.kerberos
   type: group
   fields:
   - name: config_source
@@ -306,7 +306,7 @@
   type: keyword
 - name: log.offset
   type: double
-- name: target_host.ip
+- name: tychon.target_host.ip
   type: ip
-- name: target_host.ipv4
+- name: tychon.target_host.ipv4
   type: ip

@@ -192,7 +192,7 @@
     type: keyword
   - name: type
     type: keyword
-- name: vulnerability
+- name: tychon.vulnerability
   type: group
   fields:
   - name: assessed_at
@@ -203,7 +203,7 @@
     type: keyword
   - name: risk_reason
     type: keyword
-- name: kerberos
+- name: tychon.kerberos
   type: group
   fields:
   - name: config_source
@@ -260,7 +260,7 @@
   type: keyword
 - name: log.offset
   type: double
-- name: target_host.ip
+- name: tychon.target_host.ip
   type: ip
-- name: target_host.ipv4
+- name: tychon.target_host.ipv4
   type: ip
