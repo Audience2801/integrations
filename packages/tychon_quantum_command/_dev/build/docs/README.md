@@ -112,7 +112,7 @@ Use the following checks after deployment:
 * Confirm transform output by verifying documents appear in indices such as `tychon-pqc-inventory`, `tychon-pqc-certificates`, and `tychon-pqc-system-readiness`.
 * Open the packaged dashboards and verify charts populate without missing data view errors.
 * Review a few representative documents to confirm timestamps, observer metadata, and TYCHON-specific fields were parsed as expected.
-* Confirm `event.ingested` is present on source events. Fleet's final pipeline usually sets this field after the package ingest pipeline, but the package also sets it from `_ingest.timestamp` so pipeline tests and transform sync always have a stable ingest-time field.
+* Confirm `event.ingested` is present on source events. Fleet's final pipeline sets this field after the package ingest pipeline, and the transforms use it as their ingest-time synchronization field.
 
 
 ## Troubleshooting
