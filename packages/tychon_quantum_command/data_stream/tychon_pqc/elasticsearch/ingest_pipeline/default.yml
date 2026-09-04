@@ -282,16 +282,15 @@ processors:
             ctx.tychon.application.quantum_ready = ctx.quantum_ready;
           }
         }
-        if (ctx.tychon.applicaiton != null) {
+        if (ctx.tychon.application != null) {
           if (ctx.tychon.application == null || !(ctx.tychon.application instanceof Map)) { ctx.tychon.application = [:]; }
-          if (ctx.tychon.applicaiton instanceof Map) {
-            for (entry in ctx.tychon.applicaiton.entrySet()) {
+          if (ctx.tychon.application instanceof Map) {
+            for (entry in ctx.tychon.application.entrySet()) {
               if (ctx.tychon.application[entry.getKey()] == null) {
                 ctx.tychon.application[entry.getKey()] = entry.getValue();
               }
             }
           }
-          ctx.tychon.remove('applicaiton');
         }
         if (ctx.hash != null && ctx.hash instanceof Map) {
           if (ctx.hash.sha1_certificate != null) {
